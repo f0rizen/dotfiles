@@ -1,0 +1,54 @@
+[user]
+	name = f0rizen
+	email = f0rizen@protonmail.com
+[core]
+	editor = vim
+[commit]
+	gpgsign = true
+[alias]
+	aliases = !git config -l | grep alias | cut -c 7-
+	##############
+	a = add
+	aa = add --all
+	###############
+	b = branch
+	bd = branch -d
+	bD = banch -D
+	###############
+	c = commit
+	ca = commit -a
+	cm = commit -m
+	cma = commit -ma
+	###############
+	co = checkout
+	cob = checkout -b
+	com = checkout master
+	coa = checkout .
+	###############
+	cl = clone
+	###############
+	d = diff
+	dt = difftool
+	###############
+	f = fetch
+	###############
+	m = merge
+	###############
+	pl = pull
+	plom = pull origin/master
+	###############
+	ps = push
+	psf = push --force-with-lease
+	###############
+	rem = remote -v
+	###############
+	rb = rebase
+	###############
+	s = status
+	###############
+	rsth = reset --hard
+	cln = clean -xdff
+	undo = reset --soft HEAD^
+	unstage = reset HEAD
+	###############
+	cfg = config --list

@@ -35,9 +35,10 @@
 	m = merge
 	###############
 	pl = pull
-	plom = pull origin/master
+	plom = pull origin master
 	###############
 	ps = push
+	psom = push origin master
 	psf = push --force-with-lease
 	###############
 	rem = remote -v

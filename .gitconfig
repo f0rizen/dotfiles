@@ -38,7 +38,7 @@
 	plo = pull origin # + master or main
 	###############
 	ps = push
-	psom = push origin # + master or main
+	pso = push origin # + master or main
 	psf = push --force-with-lease
 	###############
 	rem = remote -v

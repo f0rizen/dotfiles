@@ -10,7 +10,7 @@
         "editor.defaultFormatter": "xaver.clang-format"
     },
     "workbench.startupEditor": "newUntitledFile",
-    "terminal.integrated.shell.linux": "/bin/zsh",
+    "terminal.integrated.shell.linux": "zsh",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,
@@ -27,7 +27,7 @@
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
         "c": "cd $dir && zapcc -O0 $fileName -g -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "cpp": "cd $dir && zapcc++ -O0 $fileName -g -o $fileNameWithoutExt -std=c++17 && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && zapcc++ -std=c++17 -O0 $fileName -g -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "php": "php",
         "python": "python -u",
@@ -76,5 +76,5 @@
         "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
     },
     "editor.fontSize": 15.75,
-    "terminal.integrated.fontFamily": "'FiraCode Nerd Font'"
+    "terminal.integrated.fontFamily": "'FiraCode Nerd Font'",
 }

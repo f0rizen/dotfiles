@@ -21,14 +21,13 @@
         }
     ],
     "python.insidersChannel": "weekly",
-    "code-runner.runInTerminal": true,
     "workbench.editor.enablePreview": false,
     "code-runner.executorMap": {
         "javascript": "node",
-        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-        "c": "cd $dir && zapcc -O0 $fileName -g -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "cpp": "cd $dir && zapcc++ -std=c++17 -O0 $fileName -g -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "java": "cd $dir && javac $fileName",
+        "c": "cd $dir && zapcc -Wall -Wextra -O0 $fileName -g -o $fileNameWithoutExt",
+        "cpp": "cd $dir && zapcc++ -Wall -Wextra -std=gnu++17 -O0 $fileName -g -o $fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt",
         "php": "php",
         "python": "python -u",
         "perl": "perl",

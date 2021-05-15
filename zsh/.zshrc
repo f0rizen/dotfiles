@@ -14,3 +14,5 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # Import aliases
 source ~/.aliases
+
+h='/home/f0rizen'

@@ -1,0 +1,19 @@
+mkcd()
+{
+	mkdir -p "$1" && cd "$1"
+}
+
+gclonecd()
+{
+	git clone "$1" && cd "$1"
+}
+
+clear()
+{
+	cat /dev/null > "$1"
+}
+
+grp()
+{
+	grep -rniI "$1"
+}

@@ -19,3 +19,4 @@ source ~/.aliases
 source ~/.functions
 
 h='/home/f0rizen'
+bindkey '^A' expand-or-complete

@@ -18,5 +18,5 @@ source ~/.aliases
 # Import functions
 source ~/.functions
 
-h='/home/f0rizen'
+H='/home/f0rizen'
 bindkey '^A' expand-or-complete

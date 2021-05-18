@@ -50,7 +50,7 @@ set wildmenu
 syntax on
 set mouse=a
 set title
-set shell=/bin/sh
+set shell=/bin/bash
 set background=dark
 
 Bundle 'sonph/onehalf', {'rtp': 'vim/'}

@@ -8,6 +8,6 @@
 source ~/.functions
 source ~/.aliases
 
-H=/home/f0rizen
+H=$HOME
 
 PS1="[\e[0;32m\u\e[0m@\h \W] $ "

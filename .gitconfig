@@ -1,8 +1,8 @@
 [user]
 	name = f0rizen
-	email = f0rizen@protonmail.com
+	email = root@f0rizen.tk
 [core]
-	editor = vim
+	editor = nvim
 [commit]
 	gpgsign = true
 [alias]

@@ -26,7 +26,7 @@
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
         "c": "cd $dir && clang -O0 $fileName -g -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "cpp": "cd $dir && clang++ -std=c++17 -O0 $fileName -g -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && clang++ -std=gnu++17 -O0 $fileName -g -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "php": "php",
         "python": "python -u",

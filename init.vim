@@ -60,9 +60,9 @@ let g:airline_theme='onehalfdark'
 function Compile()
     let res = '"/tmp/' . expand('%:t:r') . '.o"'
     if expand('%:e') ==? 'cpp'
-        exec '!zapcc++ -std=c++17 -O0 "%" -g -o ' . res
+        exec '!clang++ -Wall -Wextra -std=gnu++17 -O0 "%" -g -o ' . res
     elseif expand('%:e') ==? 'c'
-        exec '!zapcc -O0 "%" -g -o ' . res
+        exec '!clang -Wall -Wextra -O0 "%" -g -o ' . res
     endif
 endfunction
 

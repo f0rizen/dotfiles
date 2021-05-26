@@ -13,3 +13,12 @@ clr()
 	cat /dev/null > "$1"
 }
 
+cfstart()
+{
+    sudo systemctl start wg-quick@cf-warp
+}
+
+cfstop()
+{
+    sudo systemctl stop wg-quick@cf-warp
+}

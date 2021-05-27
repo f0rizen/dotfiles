@@ -8,6 +8,6 @@
 source ~/.functions
 source ~/.aliases
 
-H='/root'
+H=$HOME
 
 PS1="[\e[0;31m\u\e[0m@\h \W] # "

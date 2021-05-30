@@ -1,3 +1,5 @@
+inoremap jj <esc>
+cnoremap jj <esc>
 set tabstop=4
 set shiftwidth=4
 set smarttab

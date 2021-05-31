@@ -38,3 +38,23 @@ endfunction
 
 noremap <f3> :call Compile()<CR>
 noremap <f4> :call Run()<CR>
+
+let g:ale_linters = {
+    \    'cpp': ['g++'],
+    \}
+
+let g:ale_completion_enabled=1
+let b:ale_fixers = [
+\    'remove_trailing_lines',
+\    'trim_whitespace',
+\    'clangtidy',
+\    'clang-format',
+\    'gofmt',
+\]
+
+let g:ale_lint_on_insert_leave=1
+let g:ale_c_clangformat_options='--style="{BasedOnStyle: llvm, IndentWidth: 4, AllowShortFunctionsOnASingleLine: None, AllowShortIfStatementsOnASingleLine: Never, Standard: Auto}"'
+
+nmap <F8> <Plug>(ale_fix)
+nmap <F7> <Plug>(ale_go_to_definition)
+

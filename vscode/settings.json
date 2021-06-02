@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Xcode Default (Dark)",
     "C_Cpp.updateChannel": "Insiders",
     "editor.formatOnSave": true,
     "files.autoSave": "afterDelay",
@@ -75,7 +74,8 @@
         "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
     },
     "editor.fontSize": 15.75,
-    "terminal.integrated.fontFamily": "'FiraCode Nerd Font'",
     "code-runner.saveFileBeforeRun": true,
-    "code-runner.runInTerminal": true
+    "code-runner.runInTerminal": true,
+    "workbench.colorTheme": "Xcode Default (Dark)",
+    "terminal.integrated.fontFamily": "'MesloLGS NF'"
 }

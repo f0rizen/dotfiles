@@ -13,7 +13,7 @@ clr()
 	cat /dev/null > "$1"
 }
 
-cfstart()
+cfrun()
 {
     sudo systemctl start wg-quick@cf-warp
 }
@@ -21,4 +21,9 @@ cfstart()
 cfstop()
 {
     sudo systemctl stop wg-quick@cf-warp
+}
+
+tprun()
+{
+    pipx run termpair share --host "http://localhost/" --port 8000 --cmd /bin/tcsh
 }

@@ -25,5 +25,5 @@ cfstop()
 
 tprun()
 {
-    pipx run termpair share --host "http://localhost/" --port 8000 --cmd /bin/tcsh
+    pipx run termpair share --port "$1" --cmd /bin/tcsh
 }

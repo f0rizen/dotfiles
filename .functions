@@ -13,7 +13,7 @@ clr()
 	cat /dev/null > "$1"
 }
 
-cfrun()
+cfstart()
 {
     sudo systemctl start wg-quick@cf-warp
 }

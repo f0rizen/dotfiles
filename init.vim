@@ -10,7 +10,7 @@ set wildmenu
 syntax on
 set mouse=a
 set title
-set shell=/bin/bash
+set shell=/bin/tcsh
 set background=dark
 
 colorscheme dracula

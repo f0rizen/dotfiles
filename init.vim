@@ -1,3 +1,5 @@
+map <Leader>y "*y
+map <Leader>p "*p
 inoremap jj <esc>
 cnoremap jj <esc>
 set tabstop=4

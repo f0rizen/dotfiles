@@ -9,7 +9,7 @@
         "editor.defaultFormatter": "xaver.clang-format"
     },
     "workbench.startupEditor": "newUntitledFile",
-    "terminal.integrated.shell.linux": "zsh",
+    "terminal.integrated.shell.linux": "/bin/tcsh",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,

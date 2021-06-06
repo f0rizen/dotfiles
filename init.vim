@@ -1,5 +1,7 @@
-map <Leader>y "*y
-map <Leader>p "*p
+noremap <Leader>y "*y
+noremap <Leader>p "*p
+noremap <Leader>Y "+y
+noremap <Leader>P "+p
 inoremap jj <esc>
 cnoremap jj <esc>
 set tabstop=4

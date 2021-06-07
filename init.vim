@@ -17,7 +17,7 @@ set title
 set shell=/bin/tcsh
 set background=dark
 
-colorscheme dracula
+colorscheme xcode_dark
 let g:airline_theme='dracula'
 let g:airline_powerline_fonts = 1
 

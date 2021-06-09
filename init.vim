@@ -18,6 +18,15 @@ colorscheme xcode_dark
 let g:airline_theme='dracula'
 let g:airline_powerline_fonts = 1
 
+call plug#begin()
+Plug 'vimlab/split-term.vim'
+call plug#end()
+
+set splitright
+set splitbelow
+
+nnoremap T :Term 11<CR>
+nnoremap V :Vexplore 25<CR>
 
 function Compile()
     let res = '"/tmp/' . expand('%:t:r') . '.o"'
@@ -47,4 +56,3 @@ let g:ale_linters = {
 let g:ale_completion_enabled=1
 
 nmap <F7> <Plug>(ale_go_to_definition)
-

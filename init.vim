@@ -11,7 +11,7 @@ set wildmenu
 syntax on
 set mouse=a
 set title
-set shell=/bin/tcsh
+set shell=/bin/zsh
 set background=dark
 
 colorscheme xcode_dark

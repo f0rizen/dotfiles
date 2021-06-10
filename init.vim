@@ -11,7 +11,7 @@ set wildmenu
 syntax on
 set mouse=a
 set title
-set shell=/bin/zsh
+set shell=/bin/tcsh
 set background=dark
 
 colorscheme xcode_dark
@@ -46,8 +46,8 @@ function Run()
     endif
 endfunction
 
-noremap <f3> :call Compile()<CR>
-noremap <f4> :call Run()<CR>
+noremap <F3> :call Compile()<CR>
+noremap <F4> :call Run()<CR>
 
 let g:ale_linters = {
     \    'cpp': ['g++'],
@@ -55,4 +55,5 @@ let g:ale_linters = {
 
 let g:ale_completion_enabled=1
 
+nmap <F6> <Plug>(operator-clang-format)
 nmap <F7> <Plug>(ale_go_to_definition)

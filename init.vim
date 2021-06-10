@@ -1,6 +1,6 @@
 set clipboard+=unnamedplus
-inoremap jj <esc>
-cnoremap jj <esc>
+inoremap jj <Esc>
+cnoremap jj <Esc>
 set tabstop=4
 set shiftwidth=4
 set smarttab
@@ -53,7 +53,15 @@ let g:ale_linters = {
     \    'cpp': ['g++'],
     \}
 
-let g:ale_completion_enabled=1
+let g:ale_completion_enabled = 1
 
-nmap <F6> <Plug>(operator-clang-format)
+let g:clang_format#auto_format_on_insert_leave = 1
+let g:clang_format#code_style = "llvm"
+let g:clang_format#style_options = {
+    \ "IndentWidth" : 4,
+    \ "AllowShortFunctionsOnASingleLine" : "All",
+    \ "AllowShortIfStatementsOnASingleLine" : "WithoutElse",
+    \ "Standard" : "Auto"}
+
+nnoremap F :ClangFormat<CR>
 nmap <F7> <Plug>(ale_go_to_definition)

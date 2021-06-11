@@ -16,6 +16,7 @@ set background=dark
 
 call plug#begin()
 Plug 'vimlab/split-term.vim'
+Plug 'dense-analysis/ale'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 call plug#end()

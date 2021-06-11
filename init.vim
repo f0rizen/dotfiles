@@ -14,13 +14,15 @@ set title
 set shell=/bin/tcsh
 set background=dark
 
+call plug#begin()
+Plug 'vimlab/split-term.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+call plug#end()
+
 colorscheme xcode_dark
 let g:airline_theme='dracula'
 let g:airline_powerline_fonts = 1
-
-call plug#begin()
-Plug 'vimlab/split-term.vim'
-call plug#end()
 
 set splitright
 set splitbelow

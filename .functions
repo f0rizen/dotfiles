@@ -15,12 +15,12 @@ clr()
 
 cfstart()
 {
-    sudo systemctl start wg-quick@cf-warp
+    sudo systemctl start wg-quick@cf-warp.service
 }
 
 cfstop()
 {
-    sudo systemctl stop wg-quick@cf-warp
+    sudo systemctl stop wg-quick@cf-warp.service
 }
 
 tprun()

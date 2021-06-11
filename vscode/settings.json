@@ -2,9 +2,7 @@
     "C_Cpp.updateChannel": "Insiders",
     "editor.formatOnSave": true,
     "files.autoSave": "afterDelay",
-    "editor.fontFamily": "'Consolas'",
     "clang-format.assumeFilename": ".clang-format",
-    "C_Cpp.clang_format_fallbackStyle": "file",
     "[cpp]": {
         "editor.defaultFormatter": "xaver.clang-format"
     },
@@ -13,12 +11,9 @@
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter-notebook",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
     "python.insidersChannel": "weekly",
     "workbench.editor.enablePreview": false,
     "code-runner.executorMap": {
@@ -73,9 +68,11 @@
         "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
     },
-    "editor.fontSize": 15.75,
     "code-runner.saveFileBeforeRun": true,
     "code-runner.runInTerminal": true,
     "workbench.colorTheme": "Xcode Default (Dark)",
-    "terminal.integrated.fontFamily": "'MesloLGS NF'"
+    "terminal.integrated.fontFamily": "'Fira Code'",
+    "workbench.editor.untitled.hint": "hidden",
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontSize": 14.75
 }

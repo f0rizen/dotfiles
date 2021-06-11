@@ -23,6 +23,11 @@ cfstop()
     sudo systemctl stop wg-quick@cf-warp.service
 }
 
+cfstatus()
+{
+    systemctl status wg-quick@cf-warp.service
+}
+
 tprun()
 {
     termpair share --port "$1" --cmd /bin/tcsh

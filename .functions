@@ -28,6 +28,11 @@ cfstatus()
     systemctl status wg-quick@cf-warp.service
 }
 
+tpsv()
+{
+    termpair serve --port "$1"
+}
+
 tprun()
 {
     termpair share --port "$1" --cmd /bin/tcsh

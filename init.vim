@@ -28,6 +28,7 @@ let g:airline_powerline_fonts = 1
 set splitright
 set splitbelow
 
+nnoremap t :VTerm<CR>
 nnoremap T :Term 11<CR>
 nnoremap V :Vexplore 25<CR>
 

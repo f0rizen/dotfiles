@@ -15,17 +15,17 @@ clr()
 
 cfstart()
 {
-    sudo systemctl start wg-quick@cf-warp.service
+    sudo systemctl start wg-quick@cf-warp
 }
 
 cfstop()
 {
-    sudo systemctl stop wg-quick@cf-warp.service
+    sudo systemctl stop wg-quick@cf-warp
 }
 
 cfstatus()
 {
-    systemctl status wg-quick@cf-warp.service
+    systemctl status wg-quick@cf-warp
 }
 
 tpsv()

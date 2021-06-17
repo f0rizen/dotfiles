@@ -1,1 +1,1 @@
-set prompt="$LOGNAME $PWD > "
+set prompt = "%n %/ > "

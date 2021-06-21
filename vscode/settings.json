@@ -74,6 +74,6 @@
     "terminal.integrated.fontFamily": "'Fira Code'",
     "workbench.editor.untitled.hint": "hidden",
     "editor.fontFamily": "'Fira Code'",
-    "editor.fontSize": 15.75,
+    "editor.fontSize": 16.75,
     "terminal.integrated.fontSize": 15.75
 }

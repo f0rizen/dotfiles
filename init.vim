@@ -8,6 +8,7 @@ set expandtab
 set number
 set showcmd
 set wildmenu
+set encoding=UTF-8
 syntax on
 set mouse=a
 set title
@@ -68,5 +69,5 @@ let g:clang_format#style_options = {
     \ "AllowShortIfStatementsOnASingleLine" : "WithoutElse",
     \ "Standard" : "Auto"}
 
-nnoremap F :ClangFormat<CR>
-nmap <F7> <Plug>(ale_go_to_definition)
+nnoremap <F7> :ClangFormat<CR>
+nmap <F8> <Plug>(ale_go_to_definition)

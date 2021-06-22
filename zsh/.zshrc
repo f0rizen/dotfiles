@@ -16,4 +16,4 @@ source ~/.functions
 H=$HOME
 bindkey '^Q' expand-or-complete
 
-export PATH="$PATH:/home/f0rizen/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"

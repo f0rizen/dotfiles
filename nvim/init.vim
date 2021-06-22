@@ -37,9 +37,9 @@ nnoremap V :Vexplore 25<CR>
 function Compile()
     let res = '"/tmp/' . expand('%:t:r') . '.o"'
     if expand('%:e') ==? 'cpp'
-        exec '!clang++ -Wall -Wextra -std=gnu++17 -O0 "%" -g -o ' . res
+        exec '!clang++ -Wall -Wextra -DLOCAL -std=gnu++17 -O0 "%" -g -o ' . res
     elseif expand('%:e') ==? 'c'
-        exec '!clang -Wall -Wextra -O0 "%" -g -o ' . res
+        exec '!clang -Wall -Wextra -DLOCAL -O0 "%" -g -o ' . res
     endif
 endfunction
 

@@ -76,7 +76,7 @@
     "editor.fontFamily": "'Fira Code'",
     "editor.fontSize": 16.75,
     "terminal.integrated.fontSize": 15.75,
-    "clang-tidy.compilerArgs": [
+    "clang-tidy.compilerArgsBefore": [
         "-DLOCAL"
     ]
 }

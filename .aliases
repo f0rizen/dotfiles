@@ -7,3 +7,5 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
+
+alias john='flatpak run com.openwall.John'

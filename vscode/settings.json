@@ -71,7 +71,7 @@
     "code-runner.saveFileBeforeRun": true,
     "code-runner.runInTerminal": true,
     "workbench.colorTheme": "Xcode Default (Dark)",
-    "terminal.integrated.fontFamily": "'Fira Code'",
+    "terminal.integrated.fontFamily": "'MesloLGS NF'",
     "workbench.editor.untitled.hint": "hidden",
     "editor.fontFamily": "'Fira Code'",
     "editor.fontSize": 16.75,

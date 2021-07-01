@@ -21,7 +21,7 @@ source ~/.aliases
 source ~/.functions
 
 H=$HOME
-bindkey '^K' expand-or-complete
+bindkey '^A' expand-or-complete
 
 export PATH="$PATH:$HOME/.local/bin"
 

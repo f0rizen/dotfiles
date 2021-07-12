@@ -9,3 +9,4 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 alias john='flatpak run com.openwall.John'
+alias openvas='sudo docker run -d -p 443:443 --name openvas mikesplain/openvas'

@@ -9,6 +9,7 @@ source ~/.functions
 source ~/.aliases
 
 H=$HOME
+EDITOR=/usr/bin/nvim
 
 bind "\C-A":menu-complete
 source ~/gitstatus/gitstatus.plugin.sh

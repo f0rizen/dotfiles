@@ -53,3 +53,5 @@
 	unstage = reset HEAD
 	###############
 	cfg = config --list
+[init]
+	defaultBranch = master

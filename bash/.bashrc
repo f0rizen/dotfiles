@@ -44,3 +44,4 @@ function my_set_prompt() {
 gitstatus_stop && gitstatus_start
 PROMPT_COMMAND=my_set_prompt
 
+export PATH="$PATH:$HOME/.local/bin"

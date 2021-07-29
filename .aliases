@@ -7,3 +7,5 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
+
+alias john='$HOME/.local/bin/john'

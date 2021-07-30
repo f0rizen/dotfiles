@@ -1,3 +1,20 @@
+set nocompatible
+filetype off
+set rtp+=~/.config/nvim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'xavierd/clang_complete'
+call vundle#end()
+
+call plug#begin()
+Plug 'vimlab/split-term.vim'
+Plug 'dense-analysis/ale'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'arzg/vim-colors-xcode'
+Plug 'dracula/vim', { 'as': 'dracula' }
+call plug#end()
+
 set clipboard+=unnamedplus
 inoremap jj <Esc>
 cnoremap jj <Esc>
@@ -14,13 +31,6 @@ set mouse=a
 set title
 set shell=/bin/tcsh
 set background=dark
-
-call plug#begin()
-Plug 'vimlab/split-term.vim'
-Plug 'dense-analysis/ale'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-call plug#end()
 
 colorscheme xcodedark
 let g:airline_theme='dracula'

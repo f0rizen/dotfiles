@@ -11,7 +11,7 @@ Plug 'vimlab/split-term.vim'
 Plug 'dense-analysis/ale'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'arzg/vim-colors-xcode'
+Plug 'kyoz/purify', { 'rtp': 'vim' }
 Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
@@ -32,7 +32,13 @@ set title
 set shell=/bin/tcsh
 set background=dark
 
-colorscheme xcodedark
+colorscheme purify
+let g:purify_bold = 1
+let g:purify_italic = 0
+let g:purify_underline = 0
+let g:purify_undercurl = 1
+let g:purify_inverse = 1
+
 let g:airline_theme='dracula'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1

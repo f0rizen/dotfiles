@@ -28,6 +28,8 @@ if [[ $input != "n" && $input != "N" && $input != "No" && $input != "nO" && $inp
     echo "Installing vscode config..."
     chmod +x $path/vscode/install-extensions.sh
     $path/vscode/install-extensions.sh
+    mkdir -p $HOME/.config/Code\ -\ Insiders/User/snippets
+    cp $path/vscode/cpp.json $HOME/.config/Code\ -\ Insiders/User/snippets
     cp $path/vscode/settings.json $HOME/.config/Code\ -\ Insiders/User
 else
     exit 1

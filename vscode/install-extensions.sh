@@ -1,0 +1,16 @@
+code-insiders --install-extension formulahendry.code-runner
+code-insiders --install-extension ms-azuretools.vscode-docker
+code-insiders --install-extension ms-vscode.cpptools
+code-insiders --install-extension ms-vscode-remote.remote-wsl
+code-insiders --install-extension ms-vscode-remote.remote-ssh
+code-insiders --install-extension ms-vscode-remote.remote-ssh-edit
+code-insiders --install-extension ms-python.python
+code-insiders --install-extension ms-python.vscode-pylance
+code-insiders --install-extension ms-toolsai.jupyter
+code-insiders --install-extension xaver.clang-format
+code-insiders --install-extension notskm.clang-tidy
+code-insiders --install-extension platformio.platformio-ide
+code-insiders --install-extension smockle.xcode-default-theme
+code-insiders --install-extension GitHub.github-vscode-theme
+code-insiders --install-extension twxs.cmake
+code-insiders --install-extension yzhang.markdown-all-in-one

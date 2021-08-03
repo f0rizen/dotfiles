@@ -70,7 +70,6 @@
     },
     "code-runner.saveFileBeforeRun": true,
     "code-runner.runInTerminal": true,
-    "workbench.colorTheme": "Xcode Default (Dark)",
     "terminal.integrated.fontFamily": "'MesloLGS NF'",
     "workbench.editor.untitled.hint": "hidden",
     "editor.fontFamily": "'Fira Code'",
@@ -78,5 +77,10 @@
     "terminal.integrated.fontSize": 15.75,
     "clang-tidy.compilerArgsBefore": [
         "-DLOCAL"
-    ]
+    ],
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "workbench.colorTheme": "Xcode Default (Dark)"
 }

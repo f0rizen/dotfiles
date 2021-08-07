@@ -1,4 +1,4 @@
-![screenshot](https://github.com/f0rizen/dotfiles/raw/main/screenshot.png)
+![screenshot](https://github.com/f0rizen/dotfiles/raw/main/zsh/screenshot.png)
 
 ### Manual installation:
 ```

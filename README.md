@@ -16,3 +16,10 @@ Y8888D'  `Y88P'     YP    YP      Y888888P Y88888P Y88888P `8888Y'
 ```
 
 ## My configs, rcfiles, aliases, etc
+
+### Installation:
+```
+git clone https://github.com/f0rizen/dotfiles.git
+cd dotfiles
+./install.sh
+```

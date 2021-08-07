@@ -99,5 +99,12 @@
 			"#pragma GCC optimize(\"inline-functions-called-once\")",
 			"#pragma GCC optimize(\"-fdelete-null-pointer-checks\")"
 		]
+	},
+	"File I/O": {
+		"prefix": "fileio",
+		"body": [
+			"freopen(\"$1.txt\", \"w\", stdout);",
+			"freopen(\"$2.txt\", \"r\", stdin);"
+		]
 	}
 }

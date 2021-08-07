@@ -13,6 +13,7 @@ if [[ $input != "n" && $input != "N" && $input != "No" && $input != "nO" && $inp
     cp $path/bash/.bashrc $HOME
     echo "Setting up zshrc..."
     cp $path/zsh/.zshrc $HOME
+    cp $path/zsh/.p10k.zsh $HOME
     echo "Setting up tcshrc..."
     cp $path/tcsh/.tcshrc $HOME
     echo "Installing tmux config..."

@@ -9,3 +9,4 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 alias john='$HOME/.local/bin/john'
+alias pip3='python3 -m pip'

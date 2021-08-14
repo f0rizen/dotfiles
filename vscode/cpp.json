@@ -106,5 +106,14 @@
 			"freopen(\"$1.txt\", \"w\", stdout);",
 			"freopen(\"$2.txt\", \"r\", stdin);"
 		]
+	},
+	"local": {
+		"prefix": "local",
+		"body": [
+			"#ifdef LOCAL",
+			"cout << \"-----------------------------\n\";",
+			"cout << \"\n-----------------------------\n\";",
+			"#endif"
+		]
 	}
 }

@@ -21,8 +21,8 @@ if [[ $input != "n" && $input != "N" && $input != "No" && $input != "nO" && $inp
     echo "Installing nvim config..."
     mkdir -p $HOME/.config/nvim
     cp $path/nvim/init.vim $HOME/.config/nvim
-    nvim -c ":PluginInstall"
-    nvim -c ":PlugInstall"
+    nvim -c :PluginInstall -c :q -c :q
+    nvim -c :PlugInstall -c :q -c :q
     echo "Setting up htoprc..."
     mkdir -p $HOME/.config/htop
     cp $path/htop/htoprc $HOME/.config/htop

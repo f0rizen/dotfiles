@@ -20,7 +20,7 @@ source ~/.aliases
 source ~/.functions
 
 H=$HOME
-EDITOR=/usr/bin/nvim
+EDITOR=/usr/local/bin/nvim
 bindkey '^A' expand-or-complete
 
 export PATH="$PATH:$HOME/.local/bin"

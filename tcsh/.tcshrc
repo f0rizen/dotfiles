@@ -1,4 +1,4 @@
 set prompt = "%~ > "
-set EDITOR = /usr/bin/nvim
+set EDITOR = /usr/local/bin/nvim
 set PATH = ( $PATH $HOME/.local/bin )
 bindkey '^A' complete-word

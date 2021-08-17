@@ -9,7 +9,7 @@ source ~/.functions
 source ~/.aliases
 
 H=$HOME
-EDITOR=/usr/bin/nvim
+EDITOR=/usr/local/bin/nvim
 
 bind "\C-A":menu-complete
 

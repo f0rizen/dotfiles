@@ -1,5 +1,4 @@
 {
-    "C_Cpp.updateChannel": "Insiders",
     "editor.formatOnSave": true,
     "files.autoSave": "afterDelay",
     "clang-format.assumeFilename": ".clang-format",

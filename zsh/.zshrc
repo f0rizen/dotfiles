@@ -24,6 +24,9 @@ EDITOR=/usr/local/bin/nvim
 bindkey '^A' expand-or-complete
 
 export PATH="$PATH:$HOME/.local/bin"
+if [[ $(whoami) == "root" ]]; then
+    export PATH="$PATH:/usr/local/bin"
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

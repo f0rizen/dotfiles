@@ -1,4 +1,7 @@
 set prompt = "%~ > "
 set EDITOR = /usr/local/bin/nvim
 set PATH = ( $PATH $HOME/.local/bin )
+if ( `whoami` == "root" ) then
+    set PATH = ( $PATH /usr/local/bin )
+endif
 bindkey '^A' complete-word

@@ -107,8 +107,8 @@
 			"freopen(\"$2.txt\", \"r\", stdin);"
 		]
 	},
-	"local": {
-		"prefix": "local",
+	"debug": {
+		"prefix": "debug",
 		"body": [
 			"#ifdef LOCAL",
 			"cout << \"-----------------------------\\n\";",

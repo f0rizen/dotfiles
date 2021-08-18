@@ -12,11 +12,13 @@ if [[ $input != "n" && $input != "N" && $input != "No" && $input != "nO" && $inp
     echo "Setting up bashrc..."
     cp $path/bash/.bashrc $HOME
     echo "Setting up zshrc..."
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     cp $path/zsh/.zshrc $HOME
     cp $path/zsh/.p10k.zsh $HOME
     echo "Setting up tcshrc..."
     cp $path/tcsh/.tcshrc $HOME
     echo "Installing tmux config..."
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
     cp $path/tmux/.tmux.conf $HOME
     echo "Installing nvim config..."
     mkdir -p $HOME/.config/nvim

@@ -11,9 +11,10 @@ if [[ $input != "n" && $input != "N" && $input != "No" && $input != "nO" && $inp
     cp $path/.gitconfig $HOME
     echo "Setting up bashrc..."
     cp $path/bash/.bashrc $HOME
-    echo "Setting up zshrc..."
+    echo "Setting up zsh config..."
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     cp $path/zsh/.zshrc $HOME
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
     cp $path/zsh/.p10k.zsh $HOME
     echo "Setting up tcshrc..."
     cp $path/tcsh/.tcshrc $HOME

@@ -1,11 +1,3 @@
-set nocompatible
-filetype off
-set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'xavierd/clang_complete'
-call vundle#end()
-
 call plug#begin()
 Plug 'vimlab/split-term.vim'
 Plug 'dense-analysis/ale'
@@ -13,6 +5,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tanvirtin/monokai.nvim'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'xavierd/clang_complete'
 call plug#end()
 
 set clipboard+=unnamedplus
@@ -35,6 +28,9 @@ set background=dark
 colorscheme monokai
 set termguicolors
 
+let g:clang_library_path='/usr/lib/llvm/12/lib64/libclang.so'
+let g:clang_c_options = '-std=gnu17'
+let g:clang_cpp_options = '-std=gnu++17'
 let g:airline_theme='dracula'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1

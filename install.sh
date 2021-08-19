@@ -23,6 +23,8 @@ if [[ $input != "n" && $input != "N" && $input != "No" && $input != "nO" && $inp
     cp $path/tmux/.tmux.conf $HOME
     echo "Installing nvim config..."
     mkdir -p $HOME/.config/nvim
+    python3 -m ensurepip
+    python3 -m pip install neovim
     cp $path/nvim/init.vim $HOME/.config/nvim
     nvim -c :PlugInstall -c :q -c :q
     echo "Setting up htoprc..."

@@ -6,6 +6,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tanvirtin/monokai.nvim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'xavierd/clang_complete'
+Plug 'rhysd/vim-clang-format'
 call plug#end()
 
 set clipboard+=unnamedplus

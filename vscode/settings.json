@@ -81,5 +81,7 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "workbench.colorTheme": "Xcode Default (Dark)"
+    "workbench.colorTheme": "Xcode Default (Dark)",
+    "security.workspace.trust.untrustedFiles": "open",
+    "C_Cpp.updateChannel": "Insiders"
 }

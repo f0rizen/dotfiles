@@ -3,7 +3,7 @@ Plug 'vimlab/split-term.vim'
 Plug 'dense-analysis/ale'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'tanvirtin/monokai.nvim'
+Plug 'navarasu/onedark.nvim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'xavierd/clang_complete'
 Plug 'rhysd/vim-clang-format'
@@ -26,8 +26,7 @@ set title
 set shell=/bin/tcsh
 set background=dark
 
-colorscheme monokai
-set termguicolors
+colorscheme onedark
 
 let g:clang_library_path='/usr/lib/llvm/12/lib64/libclang.so'
 let g:clang_c_options = '-std=gnu17'

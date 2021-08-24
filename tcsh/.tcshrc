@@ -1,6 +1,7 @@
 set prompt = "%~ > "
 set EDITOR = /usr/local/bin/nvim
-set PATH = ( $PATH $HOME/.local/bin )
+set PATH = ( $PATH "$HOME/.local/bin" )
+set PATH = ( $PATH "/usr/local/lib64/ruby/gems/2.6.0/bin" )
 if ( `whoami` == "root" ) then
     set PATH = ( $PATH /usr/local/bin )
 endif

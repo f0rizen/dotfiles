@@ -14,3 +14,4 @@ vscode --install-extension smockle.xcode-default-theme
 vscode --install-extension GitHub.github-vscode-theme
 vscode --install-extension twxs.cmake
 vscode --install-extension yzhang.markdown-all-in-one
+vscode --install-extension matthewevers.compiler-explorer

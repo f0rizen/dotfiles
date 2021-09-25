@@ -18,9 +18,9 @@
     "code-runner.executorMap": {
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-        "c": "cd $dir && clang -DLOCAL -O0 $fileName -g -o /tmp/$fileNameWithoutExt && /tmp/$fileNameWithoutExt",
-        "cpp": "cd $dir && clang++ -DLOCAL -std=gnu++17 -O0 $fileName -g -o /tmp/$fileNameWithoutExt && /tmp/$fileNameWithoutExt",
-        "objective-c": "cd $dir && gcc -DLOCAL -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "c": "cd $dir && clang -DLOCAL -D_GLIBCXX_DEBUG -O0 $fileName -g -o /tmp/$fileNameWithoutExt && /tmp/$fileNameWithoutExt",
+        "cpp": "cd $dir && clang++ -DLOCAL -D_GLIBCXX_DEBUG -std=gnu++17 -O0 $fileName -g -o /tmp/$fileNameWithoutExt && /tmp/$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -DLOCAL -D_GLIBCXX_DEBUG -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "php": "php",
         "python": "python -u",
         "perl": "perl",

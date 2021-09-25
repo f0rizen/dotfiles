@@ -6,7 +6,7 @@
         "editor.defaultFormatter": "xaver.clang-format"
     },
     "workbench.startupEditor": "newUntitledFile",
-    "terminal.integrated.shell.linux": "/bin/tcsh",
+    "terminal.integrated.shell.linux": "/bin/bash",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,
@@ -81,7 +81,25 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "workbench.colorTheme": "Xcode Default (Dark)",
     "security.workspace.trust.untrustedFiles": "open",
-    "C_Cpp.updateChannel": "Insiders"
+    "C_Cpp.updateChannel": "Insiders",
+    "workbench.colorTheme": "Xcode Default (Dark)",
+    "workbench.colorCustomizations": {
+        "terminalCursor.background": "#202124",
+        "terminalCursor.foreground": "#E8EAED",
+        "terminal.ansiBlack": "#202124",
+        "terminal.ansiBlue": "#4285F4",
+        "terminal.ansiGreen": "#34A853",
+        "terminal.ansiMagenta": "#A142F4",
+        "terminal.ansiRed": "#EA4335",
+        "terminal.ansiWhite": "#E8EAED",
+        "terminal.ansiYellow": "#FBBC04",
+        "terminal.ansiBrightBlack": "#5F6368",
+        "terminal.ansiBrightBlue": "#4285F4",
+        "terminal.ansiBrightGreen": "#34A853",
+        "terminal.ansiBrightMagenta": "#A142F4",
+        "terminal.ansiBrightRed": "#EA4335",
+        "terminal.ansiBrightWhite": "#FFFFFF",
+        "terminal.ansiBrightYellow": "#FBBC05",
+    }
 }

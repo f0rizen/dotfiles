@@ -6,7 +6,7 @@
         "editor.defaultFormatter": "xaver.clang-format"
     },
     "workbench.startupEditor": "newUntitledFile",
-    "terminal.integrated.shell.linux": "/bin/bash",
+    "terminal.integrated.defaultProfile.linux": "bash",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,

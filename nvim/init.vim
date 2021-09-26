@@ -3,7 +3,7 @@ Plug 'vimlab/split-term.vim'
 Plug 'dense-analysis/ale'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'morhetz/gruvbox'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'xavierd/clang_complete'
 Plug 'rhysd/vim-clang-format'
@@ -24,9 +24,10 @@ syntax on
 set mouse=a
 set title
 set shell=/bin/tcsh
-set background=dark
 
-colorscheme gruvbox
+set t_Co=256
+set background=dark
+colorscheme onehalfdark
 
 let g:clang_library_path='/usr/lib/llvm/12/lib64/libclang.so'
 let g:clang_c_options = '-std=gnu17'

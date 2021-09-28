@@ -1,0 +1,8 @@
+startup_message off
+term screen-256color
+escape ^Bb
+bind l focus right
+bind h focus left
+bind k focus up
+bind j focus down
+bind [ eval "copy"

@@ -21,6 +21,8 @@ if [[ $input != "n" && $input != "N" && $input != "No" && $input != "nO" && $inp
     echo "Installing tmux config..."
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
     cp $path/tmux/.tmux.conf $HOME
+    echo "Setting up GNU Screen config"
+    cp $path/screen/.screenrc $HOME
     echo "Installing nvim config..."
     mkdir -p $HOME/.config/nvim
     python3 -m ensurepip

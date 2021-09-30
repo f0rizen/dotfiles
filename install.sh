@@ -1,4 +1,4 @@
-path=$(echo $0 | sed 's|\(.*\)/.*|\1|')
+path=$(dirname $0)
 banner="$path/banner"
 cat $banner
 echo ""

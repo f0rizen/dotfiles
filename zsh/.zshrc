@@ -23,6 +23,7 @@ H=$HOME
 EDITOR=/usr/local/bin/nvim
 bindkey '^A' expand-or-complete
 
+JAVA_CMD="/opt/openjdk-bin-11/bin/java"
 export JAVA_HOME=/opt/openjdk-bin-11
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/usr/local/lib64/ruby/gems/2.6.0/bin"

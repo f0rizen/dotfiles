@@ -23,11 +23,13 @@ H=$HOME
 EDITOR=/usr/local/bin/nvim
 bindkey '^A' expand-or-complete
 
+export JAVA_HOME=/opt/openjdk-bin-11
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/usr/local/lib64/ruby/gems/2.6.0/bin"
 if [[ $(whoami) == "root" ]]; then
     export PATH="$PATH:/usr/local/bin"
 fi
+export PATH=$PATH:$JAVA_HOME/bin
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

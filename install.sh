@@ -49,9 +49,17 @@ if [[ $input != "n" && $input != "N" && $input != "No" && $input != "nO" && $inp
         echo "Installing vscode config..."
         chmod +x $path/vscode/install-extensions.sh
         $path/vscode/install-extensions.sh
-        mkdir -p $HOME/.config/Code\ -\ Insiders/User/snippets
-        cp $path/vscode/cpp.json $HOME/.config/Code\ -\ Insiders/User/snippets
-        cp $path/vscode/settings.json $HOME/.config/Code\ -\ Insiders/User
+        if [[ -x "$(command -v code-insiders)" ]]; then
+            mkdir -p $HOME/.config/Code\ -\ Insiders/User/snippets
+            cp $path/vscode/cpp.json $HOME/.config/Code\ -\ Insiders/User/snippets
+            cp $path/vscode/keybindings.json $HOME/.config/Code\ -\ Insiders/User
+            cp $path/vscode/settings.json $HOME/.config/Code\ -\ Insiders/User
+        else
+            mkdir -p $HOME/.config/Code/User/snippets
+            cp $path/vscode/cpp.json $HOME/.config/Code/User/snippets
+            cp $path/vscode/keybindings.json $HOME/.config/Code/User
+            cp $path/vscode/settings.json $HOME/.config/Code/User
+        fi
     fi
 else
     exit 1

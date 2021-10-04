@@ -1,17 +1,15 @@
-vscode --install-extension formulahendry.code-runner
-vscode --install-extension ms-azuretools.vscode-docker
-vscode --install-extension ms-vscode.cpptools
-vscode --install-extension ms-vscode-remote.remote-wsl
-vscode --install-extension ms-vscode-remote.remote-ssh
-vscode --install-extension ms-vscode-remote.remote-ssh-edit
-vscode --install-extension ms-python.python
-vscode --install-extension ms-python.vscode-pylance
-vscode --install-extension ms-toolsai.jupyter
-vscode --install-extension xaver.clang-format
-vscode --install-extension notskm.clang-tidy
-vscode --install-extension platformio.platformio-ide
-vscode --install-extension smockle.xcode-default-theme
-vscode --install-extension GitHub.github-vscode-theme
-vscode --install-extension twxs.cmake
-vscode --install-extension yzhang.markdown-all-in-one
-vscode --install-extension matthewevers.compiler-explorer
+if [[ ! -x "$(command -v vscode)" && ! -x "$(command -v code)" && ! -x "$(command -v code-insiders)" ]]; then
+    echo "Vscode not found"
+else
+    prog=""
+    if [[ -x "$(command -v vscode)" ]]; then
+        prog="vscode"
+    elif [[ -v "$(command -v code)" ]]; then
+        prog="code"
+    else [[ -v "$(command -v code-insiders)" ]]
+        prog="code-insiders"
+    fi
+    for i in formulahendry.code-runner ms-azuretools.vscode-docker ms-vscode.cpptools ms-vscode-remote.remote-ssh ms-vscode-remote.remote-ssh-edit ms-python.python ms-python.vscode-pylance ms-toolsai.jupyter notskm.clang-tidy platformio.platformio-ide smockle.xcode-default-theme matthewevers.compiler-explorer; do
+        $prog --install-extension $i &>/dev/null
+    done
+fi

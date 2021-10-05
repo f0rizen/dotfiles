@@ -1,12 +1,12 @@
 call plug#begin()
-Plug 'vimlab/split-term.vim'
 Plug 'dense-analysis/ale'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'sonph/onehalf', { 'rtp': 'vim' }
-Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'xavierd/clang_complete'
 Plug 'rhysd/vim-clang-format'
+Plug 'dracula/vim'
+Plug 'ryanoasis/vim-devicons'
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 set clipboard+=unnamedplus
@@ -23,11 +23,11 @@ set encoding=UTF-8
 syntax on
 set mouse=a
 set title
-set shell=/bin/tcsh
+set shell=/bin/bash
 
 set t_Co=256
 set background=dark
-colorscheme onehalfdark
+colorscheme dracula
 
 let g:clang_library_path='/usr/lib/llvm/12/lib64/libclang.so'
 let g:clang_c_options = '-std=gnu17'
@@ -39,9 +39,7 @@ let g:airline_powerline_fonts = 1
 set splitright
 set splitbelow
 
-nnoremap t :VTerm<CR>
-nnoremap T :Term 11<CR>
-nnoremap V :Vexplore 25<CR>
+nnoremap <silent> V :NERDTree<CR>
 
 function Compile()
     let res = '"/tmp/' . expand('%:t:r') . '.o"'

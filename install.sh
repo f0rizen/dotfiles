@@ -32,7 +32,7 @@ if [[ $input != "n" && $input != "N" && $input != "No" && $input != "nO" && $inp
         echo "Setting up GNU Screen config"
         cp $path/screen/.screenrc $HOME
     fi
-    if [[ -x "$(command -v nvim)" && -x "$(command -v tcsh)" ]]; then
+    if [[ -x "$(command -v nvim)" && -x "$(command -v bash)" && -x "$(command -v python3)" ]]; then
         echo "Installing nvim config..."
         mkdir -p $HOME/.config/nvim
         python3 -m ensurepip &>/dev/null

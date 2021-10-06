@@ -5,7 +5,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'xavierd/clang_complete'
 Plug 'rhysd/vim-clang-format'
 Plug 'dracula/vim'
-Plug 'tomasiser/vim-code-dark'
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 call plug#end()
@@ -28,7 +27,7 @@ set shell=/bin/bash
 
 set t_Co=256
 set background=dark
-colorscheme codedark
+colorscheme dracula
 
 let g:clang_library_path='/usr/lib/llvm/12/lib64/libclang.so'
 let g:clang_c_options = '-std=gnu17'

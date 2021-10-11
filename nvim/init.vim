@@ -5,6 +5,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'xavierd/clang_complete'
 Plug 'rhysd/vim-clang-format'
 Plug 'dracula/vim'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 call plug#end()
@@ -25,9 +26,16 @@ set mouse=a
 set title
 set shell=/bin/bash
 
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
 set t_Co=256
 set background=dark
-colorscheme dracula
+set cursorline
+colorscheme onehalfdark
 
 let g:clang_library_path='/usr/lib/llvm/12/lib64/libclang.so'
 let g:clang_c_options = '-std=gnu17'

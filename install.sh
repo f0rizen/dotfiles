@@ -12,12 +12,10 @@ if [[ $input != "n" && $input != "N" && $input != "No" && $input != "nO" && $inp
         echo "Setting up bashrc..."
         cp $path/bash/.bashrc $HOME
     fi
-    if [[ -x "$(command -v zsh)" && -x "$(command -v git)" ]]; then
+    if [[ -x "$(command -v zsh)" && -x "$(command -v curl)" ]]; then
         echo "Setting up zsh config..."
         sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" &>/dev/null
         cp $path/zsh/.zshrc $HOME
-        git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k &>/dev/null
-        cp $path/zsh/.p10k.zsh $HOME
     fi
     if [[ -x "$(command -v tcsh)" ]]; then
         echo "Setting up tcshrc..."

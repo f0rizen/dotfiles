@@ -75,7 +75,8 @@
     "editor.fontSize": 16.75,
     "terminal.integrated.fontSize": 15.75,
     "clang-tidy.compilerArgsBefore": [
-        "-DLOCAL"
+        "-DLOCAL",
+        "-std=gnu++17"
     ],
     "notebook.cellToolbarLocation": {
         "default": "right",

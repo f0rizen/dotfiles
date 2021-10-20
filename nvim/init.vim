@@ -5,9 +5,20 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'xavierd/clang_complete'
 Plug 'rhysd/vim-clang-format'
 Plug 'dracula/vim'
-Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'drewtempelmeyer/palenight.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
+Plug 'wlangstroth/vim-racket'
+Plug 'sheerun/vim-polyglot'
+Plug 'rust-lang/rust.vim'
+Plug 'preservim/tagbar'
+Plug 'universal-ctags/ctags'
+Plug 'luochen1990/rainbow'
+Plug 'vim-syntastic/syntastic'
+Plug 'tpope/vim-surround'
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'tommcdo/vim-lion'
+Plug 'Shirk/vim-gas'
 call plug#end()
 
 set clipboard+=unnamedplus
@@ -18,30 +29,21 @@ set shiftwidth=4
 set smarttab
 set expandtab
 set number
-set showcmd
-set wildmenu
+set ruler
+set wrap
 set encoding=UTF-8
 syntax on
 set mouse=a
-set title
 set shell=/bin/bash
 
-if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
-endif
-
+set runtimepath+=~/.config/nvim/syntax
 set t_Co=256
-set background=dark
-set cursorline
-colorscheme onehalfdark
+colorscheme palenight
 
 let g:clang_library_path='/usr/lib/llvm/12/lib64/libclang.so'
 let g:clang_c_options = '-std=gnu17'
 let g:clang_cpp_options = '-std=gnu++17'
 let g:airline_theme='dracula'
-let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 set splitright
@@ -85,4 +87,3 @@ let g:clang_format#style_options = {
     \ "Standard" : "Auto"}
 
 nnoremap <F7> :ClangFormat<CR>
-nmap <F8> <Plug>(ale_go_to_definition)

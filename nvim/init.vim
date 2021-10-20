@@ -39,6 +39,7 @@ set shell=/bin/bash
 set runtimepath+=~/.config/nvim/syntax
 set t_Co=256
 colorscheme palenight
+set cursorline
 
 let g:clang_library_path='/usr/lib/llvm/12/lib64/libclang.so'
 let g:clang_c_options = '-std=gnu17'

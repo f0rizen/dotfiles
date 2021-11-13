@@ -13,8 +13,10 @@ EDITOR=/usr/local/bin/nvim
 
 bind "\C-A":menu-complete
 
+bold=$(tput bold)
+normal=$(tput sgr0)
 if [[ $(whoami) != "root" ]]; then
-    PS1="\[\033]0;\u@\h:\w\007\]\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[00m\] » "
+    PS1="\[\033]0;\u@\h:\w\007\]\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[00m\] ${bold}»${normal} "
 else
     PS1="\[\033]0;\u@\h:\w\007\]\[\033[01;31m\]\h\[\033[01;34m\] \w #\[\033[00m\] "
 fi

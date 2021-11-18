@@ -72,7 +72,7 @@
     "terminal.integrated.fontFamily": "'Jetbrains Mono'",
     "workbench.editor.untitled.hint": "hidden",
     "editor.fontFamily": "'Jetbrains Mono'",
-    "editor.fontSize": 16.25,
+    "editor.fontSize": 16.6,
     "terminal.integrated.fontSize": 15.75,
     "clang-tidy.compilerArgsBefore": [
         "-DLOCAL",

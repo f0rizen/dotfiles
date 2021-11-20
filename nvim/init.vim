@@ -8,22 +8,11 @@ Plug 'dracula/vim'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
-Plug 'wlangstroth/vim-racket'
-Plug 'sheerun/vim-polyglot'
-Plug 'rust-lang/rust.vim'
-Plug 'preservim/tagbar'
-Plug 'universal-ctags/ctags'
-Plug 'luochen1990/rainbow'
-Plug 'vim-syntastic/syntastic'
-Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-Plug 'tommcdo/vim-lion'
-Plug 'Shirk/vim-gas'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 set clipboard+=unnamedplus
-inoremap jj <Esc>
-cnoremap jj <Esc>
 set tabstop=4
 set shiftwidth=4
 set smarttab

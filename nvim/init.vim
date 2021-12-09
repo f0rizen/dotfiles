@@ -1,7 +1,6 @@
 call plug#begin()
 Plug 'dense-analysis/ale'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 Plug 'xavierd/clang_complete'
 Plug 'rhysd/vim-clang-format'
 Plug 'w0ng/vim-hybrid'
@@ -32,11 +31,17 @@ set cursorline
 let g:clang_library_path='/usr/lib/llvm/12/lib64/libclang.so'
 let g:clang_c_options = '-std=gnu17'
 let g:clang_cpp_options = '-std=gnu++17'
-let g:airline_theme='dracula'
-let g:airline_powerline_fonts = 1
-
-set splitright
-set splitbelow
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+let g:lightline = {
+	\ 'colorscheme': 'one',
+	\ 'active': {
+	\   'left': [ [ 'mode', 'paste' ],
+    \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
+	\ },
+	\ 'component_function': {
+	\   'cocstatus': 'coc#status'
+	\ },
+	\ }
 
 nnoremap <silent> V :NERDTree<CR>
 

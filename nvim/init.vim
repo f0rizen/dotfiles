@@ -4,12 +4,11 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'xavierd/clang_complete'
 Plug 'rhysd/vim-clang-format'
+Plug 'w0ng/vim-hybrid'
 Plug 'dracula/vim'
-Plug 'drewtempelmeyer/palenight.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-Plug 'w0ng/vim-hybrid'
 call plug#end()
 
 set clipboard+=unnamedplus
@@ -27,7 +26,6 @@ set shell=/bin/bash
 
 set runtimepath+=~/.config/nvim/syntax
 set t_Co=256
-"colorscheme palenight
 colorscheme hybrid
 set cursorline
 

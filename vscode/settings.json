@@ -72,19 +72,14 @@
     "terminal.integrated.fontFamily": "'Jetbrains Mono'",
     "workbench.editor.untitled.hint": "hidden",
     "editor.fontFamily": "'Jetbrains Mono'",
-    "editor.fontSize": 16.6,
+    "editor.fontSize": 16.75,
     "terminal.integrated.fontSize": 15.75,
-    "clang-tidy.compilerArgsBefore": [
-        "-DLOCAL",
-        "-std=gnu++17"
-    ],
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
     },
     "security.workspace.trust.untrustedFiles": "open",
     "C_Cpp.updateChannel": "Insiders",
-    "workbench.colorTheme": "Xcode Default (Dark)",
     "workbench.colorCustomizations": {
         "terminalCursor.background": "#202124",
         "terminalCursor.foreground": "#E8EAED",
@@ -101,8 +96,10 @@
         "terminal.ansiBrightMagenta": "#A142F4",
         "terminal.ansiBrightRed": "#EA4335",
         "terminal.ansiBrightWhite": "#FFFFFF",
-        "terminal.ansiBrightYellow": "#FBBC05",
+        "terminal.ansiBrightYellow": "#FBBC05"
     },
     "editor.codeLensFontFamily": "'",
-    "terminal.external.linuxExec": "gnome-terminalir"
+    "terminal.external.linuxExec": "gnome-terminal",
+    "workbench.colorTheme": "Xcode Default (Dark)",
+    "C_Cpp.intelliSenseEngine": "Disabled"
 }

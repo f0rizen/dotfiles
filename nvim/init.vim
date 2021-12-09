@@ -33,7 +33,7 @@ let g:clang_c_options = '-std=gnu17'
 let g:clang_cpp_options = '-std=gnu++17'
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 let g:lightline = {
-	\ 'colorscheme': 'one',
+	\ 'colorscheme': 'wombat',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
     \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]

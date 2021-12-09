@@ -9,6 +9,7 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'w0ng/vim-hybrid'
 call plug#end()
 
 set clipboard+=unnamedplus
@@ -26,7 +27,8 @@ set shell=/bin/bash
 
 set runtimepath+=~/.config/nvim/syntax
 set t_Co=256
-colorscheme palenight
+"colorscheme palenight
+colorscheme hybrid
 set cursorline
 
 let g:clang_library_path='/usr/lib/llvm/12/lib64/libclang.so'

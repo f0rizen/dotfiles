@@ -1,5 +1,4 @@
 {
-    "editor.formatOnSave": true,
     "files.autoSave": "afterDelay",
     "clang-format.assumeFilename": ".clang-format",
     "[cpp]": {
@@ -101,5 +100,7 @@
     "editor.codeLensFontFamily": "'",
     "terminal.external.linuxExec": "gnome-terminal",
     "workbench.colorTheme": "Xcode Default (Dark)",
-    "C_Cpp.intelliSenseEngine": "Disabled"
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSave": true
 }

@@ -3,8 +3,7 @@ Plug 'dense-analysis/ale'
 Plug 'itchyny/lightline.vim'
 Plug 'xavierd/clang_complete'
 Plug 'rhysd/vim-clang-format'
-Plug 'w0ng/vim-hybrid'
-Plug 'dracula/vim'
+Plug 'mhartington/oceanic-next'
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
@@ -25,7 +24,7 @@ set shell=/bin/bash
 
 set runtimepath+=~/.config/nvim/syntax
 set t_Co=256
-colorscheme hybrid
+colorscheme OceanicNext
 
 let g:clang_library_path='/usr/lib/llvm/12/lib64/libclang.so'
 let g:clang_c_options = '-std=gnu17'

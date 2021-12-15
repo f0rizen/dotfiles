@@ -42,7 +42,6 @@ let g:lightline = {
 	\ }
 
 nnoremap <silent> V :NERDTree<CR>
-inoremap { {<CR>}<Esc>ko
 
 function Compile()
     let res = '"/tmp/' . expand('%:t:r') . '.o"'

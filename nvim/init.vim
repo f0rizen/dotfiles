@@ -5,8 +5,11 @@ Plug 'xavierd/clang_complete'
 Plug 'rhysd/vim-clang-format'
 Plug 'mhartington/oceanic-next'
 Plug 'ryanoasis/vim-devicons'
-Plug 'scrooloose/nerdtree'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'sheerun/vim-polyglot'
+Plug 'jiangmiao/auto-pairs'
+Plug 'ap/vim-css-color'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 set clipboard+=unnamedplus

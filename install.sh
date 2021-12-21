@@ -35,6 +35,7 @@ if [[ $input != "n" && $input != "N" && $input != "No" && $input != "nO" && $inp
         mkdir -p $HOME/.config/nvim
         python3 -m ensurepip &>/dev/null
         python3 -m pip install neovim &>/dev/null
+        sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' &>/dev/null
         cp $path/nvim/init.vim $HOME/.config/nvim
         nvim -c :PlugInstall -c :q -c :q
     fi

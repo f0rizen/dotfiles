@@ -1,4 +1,5 @@
 path=$(dirname $0)
+REALPATH=$PWD
 read -rp "This may delete your configs. Do you want to continue? " -e input
 if [[ $input != "n" && $input != "N" && $input != "No" && $input != "nO" && $input != "NO" ]]; then
     echo "Setting up aliases and functions..."
@@ -38,6 +39,9 @@ if [[ $input != "n" && $input != "N" && $input != "No" && $input != "nO" && $inp
         sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' &>/dev/null
         cp $path/nvim/init.vim $HOME/.config/nvim
         nvim -c :PlugInstall -c :q -c :q
+        cd $HOME/.config/nvim/plugged/YouCompleteMe
+        ./install.py --clangd-completer
+        cd $REALPATH
     fi
     if [[ -x "$(command -v htop)" ]]; then
         echo "Setting up htoprc..."

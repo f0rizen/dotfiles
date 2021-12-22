@@ -1,15 +1,14 @@
 call plug#begin()
-Plug 'dense-analysis/ale'
+"Plug 'dense-analysis/ale'
 Plug 'itchyny/lightline.vim'
-Plug 'xavierd/clang_complete'
 Plug 'rhysd/vim-clang-format'
-Plug 'mhartington/oceanic-next'
 Plug 'ryanoasis/vim-devicons'
-Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'ycm-core/YouCompleteMe'
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
-Plug 'ap/vim-css-color'
 Plug 'preservim/nerdtree'
+Plug 'airblade/vim-gitgutter'
+Plug 'mhartington/oceanic-next'
 call plug#end()
 
 set clipboard+=unnamedplus
@@ -32,15 +31,11 @@ colorscheme OceanicNext
 let g:clang_library_path='/usr/lib/llvm/12/lib64/libclang.so'
 let g:clang_c_options = '-std=gnu17'
 let g:clang_cpp_options = '-std=gnu++17'
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 let g:lightline = {
 	\ 'colorscheme': 'wombat',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
-    \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
-	\ },
-	\ 'component_function': {
-	\   'cocstatus': 'coc#status'
+    \             [ 'readonly', 'filename', 'modified' ] ]
 	\ },
 	\ }
 

@@ -1,5 +1,5 @@
 call plug#begin()
-"Plug 'dense-analysis/ale'
+Plug 'joshdick/onedark.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'rhysd/vim-clang-format'
 Plug 'ryanoasis/vim-devicons'
@@ -8,7 +8,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdtree'
 Plug 'airblade/vim-gitgutter'
-Plug 'mhartington/oceanic-next'
 call plug#end()
 
 set clipboard+=unnamedplus
@@ -26,7 +25,8 @@ set shell=/bin/bash
 
 set runtimepath+=~/.config/nvim/syntax
 set t_Co=256
-colorscheme OceanicNext
+colorscheme onedark
+set cursorline
 
 let g:clang_library_path='/usr/lib/llvm/12/lib64/libclang.so'
 let g:clang_c_options = '-std=gnu17'

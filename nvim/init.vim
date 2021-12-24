@@ -28,15 +28,8 @@ set t_Co=256
 colorscheme onedark
 set cursorline
 
-let g:clang_library_path='/usr/lib/llvm/12/lib64/libclang.so'
-let g:clang_c_options = '-std=gnu17'
-let g:clang_cpp_options = '-std=gnu++17'
 let g:lightline = {
-	\ 'colorscheme': 'wombat',
-	\ 'active': {
-	\   'left': [ [ 'mode', 'paste' ],
-    \             [ 'readonly', 'filename', 'modified' ] ]
-	\ },
+	\ 'colorscheme': 'onedark',
 	\ }
 
 nnoremap <silent> V :NERDTree<CR>
@@ -61,12 +54,6 @@ endfunction
 
 noremap <F3> :call Compile()<CR>
 noremap <F4> :call Run()<CR>
-
-let g:ale_linters = {
-    \    'cpp': ['g++'],
-    \}
-
-let g:ale_completion_enabled = 1
 
 let g:clang_format#auto_format_on_insert_leave = 1
 let g:clang_format#code_style = "llvm"

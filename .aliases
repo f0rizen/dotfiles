@@ -10,3 +10,5 @@ alias .....='cd ../../../..'
 
 alias pip3='python3 -m pip'
 alias pwndbg='pwndbg -ex init-pwndbg'
+alias hashcat='hashcat --potfile-disable'
+alias cls='clear'

@@ -1,4 +1,5 @@
 call plug#begin()
+Plug 'chriskempson/base16-vim'
 Plug 'rakr/vim-one'
 Plug 'itchyny/lightline.vim'
 Plug 'rhysd/vim-clang-format'
@@ -25,16 +26,12 @@ set shell=/bin/bash
 
 set runtimepath+=~/.config/nvim/syntax
 set t_Co=256
-let g:one_allow_italics = 1
-colorscheme one
+colorscheme base16-tomorrow-night
 
-if (empty($TMUX))
-  if (has("nvim"))
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  endif
-  if (has("termguicolors"))
-    set termguicolors
-  endif
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
 endif
 
 let g:lightline = {

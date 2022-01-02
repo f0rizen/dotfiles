@@ -25,8 +25,17 @@ set shell=/bin/bash
 
 set runtimepath+=~/.config/nvim/syntax
 set t_Co=256
+let g:one_allow_italics = 1
 colorscheme one
-set termguicolors
+
+if (empty($TMUX))
+  if (has("nvim"))
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+  if (has("termguicolors"))
+    set termguicolors
+  endif
+endif
 
 let g:lightline = {
 	\ 'colorscheme': 'one',

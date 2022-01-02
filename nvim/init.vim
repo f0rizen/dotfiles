@@ -1,5 +1,5 @@
 call plug#begin()
-Plug 'joshdick/onedark.vim'
+Plug 'rakr/vim-one'
 Plug 'itchyny/lightline.vim'
 Plug 'rhysd/vim-clang-format'
 Plug 'ryanoasis/vim-devicons'
@@ -25,11 +25,11 @@ set shell=/bin/bash
 
 set runtimepath+=~/.config/nvim/syntax
 set t_Co=256
-colorscheme onedark
-set cursorline
+colorscheme one
+set termguicolors
 
 let g:lightline = {
-	\ 'colorscheme': 'onedark',
+	\ 'colorscheme': 'one',
 	\ }
 
 nnoremap <silent> V :NERDTree<CR>

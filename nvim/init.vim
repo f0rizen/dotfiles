@@ -1,5 +1,6 @@
 call plug#begin()
 Plug 'drewtempelmeyer/palenight.vim'
+Plug 'joshdick/onedark.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'rhysd/vim-clang-format'
 Plug 'ryanoasis/vim-devicons'
@@ -33,7 +34,7 @@ set t_Co=256
 colorscheme palenight
 
 let g:lightline = {
-	\ 'colorscheme': 'wombat',
+	\ 'colorscheme': 'onedark',
 	\ }
 
 nnoremap <silent> V :NERDTree<CR>

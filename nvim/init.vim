@@ -1,5 +1,5 @@
 call plug#begin()
-Plug 'kyoz/purify', { 'rtp': 'vim' }
+Plug 'drewtempelmeyer/palenight.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'rhysd/vim-clang-format'
 Plug 'ryanoasis/vim-devicons'
@@ -25,15 +25,15 @@ set shell=/bin/bash
 
 set runtimepath+=~/.config/nvim/syntax
 set t_Co=256
-if exists('+termguicolors')
-    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-    set termguicolors
-endif
-colorscheme purify
+"if exists('+termguicolors')
+"    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+"    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+"    set termguicolors
+"endif
+colorscheme palenight
 
 let g:lightline = {
-	\ 'colorscheme': 'purify',
+	\ 'colorscheme': 'wombat',
 	\ }
 
 nnoremap <silent> V :NERDTree<CR>

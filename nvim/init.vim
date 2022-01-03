@@ -1,6 +1,5 @@
 call plug#begin()
-Plug 'chriskempson/base16-vim'
-Plug 'rakr/vim-one'
+Plug 'kyoz/purify', { 'rtp': 'vim' }
 Plug 'itchyny/lightline.vim'
 Plug 'rhysd/vim-clang-format'
 Plug 'ryanoasis/vim-devicons'
@@ -26,16 +25,15 @@ set shell=/bin/bash
 
 set runtimepath+=~/.config/nvim/syntax
 set t_Co=256
-colorscheme base16-tomorrow-night
-
 if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    set termguicolors
 endif
+colorscheme purify
 
 let g:lightline = {
-	\ 'colorscheme': 'one',
+	\ 'colorscheme': 'purify',
 	\ }
 
 nnoremap <silent> V :NERDTree<CR>

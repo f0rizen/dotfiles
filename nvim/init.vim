@@ -1,12 +1,12 @@
 call plug#begin()
-Plug 'drewtempelmeyer/palenight.vim'
-Plug 'joshdick/onedark.vim'
+Plug 'arzg/vim-colors-xcode'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 Plug 'itchyny/lightline.vim'
 Plug 'rhysd/vim-clang-format'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'sheerun/vim-polyglot'
-Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdtree'
 Plug 'airblade/vim-gitgutter'
 call plug#end()
@@ -23,18 +23,20 @@ set encoding=UTF-8
 syntax on
 set mouse=a
 set shell=/bin/bash
+let g:UltiSnipsExpandTrigger="<c-a>"
 
 set runtimepath+=~/.config/nvim/syntax
 set t_Co=256
-"if exists('+termguicolors')
-"    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-"    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-"    set termguicolors
-"endif
-colorscheme palenight
+if exists('+termguicolors')
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    set termguicolors
+endif
+colorscheme xcodedarkhc
+set cursorline
 
 let g:lightline = {
-	\ 'colorscheme': 'onedark',
+	\ 'colorscheme': 'material',
 	\ }
 
 nnoremap <silent> V :NERDTree<CR>

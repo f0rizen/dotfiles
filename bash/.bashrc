@@ -21,9 +21,4 @@ fi
 
 export JAVA_HOME=/opt/openjdk-bin-11
 export JAVA_CMD="/opt/openjdk-bin-11/bin/java"
-export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:/usr/local/lib64/ruby/gems/2.6.0/bin"
-if [[ $(whoami) == "root" ]]; then
-    export PATH="$PATH:/usr/local/bin"
-fi
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin:/usr/lib/llvm/12/bin:/home/f0rizen/.local/bin:/usr/local/lib64/ruby/gems/2.6.0/bin:$JAVA_HOME/bin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin:/usr/lib/llvm/12/bin:$HOME/.local/bin:/usr/local/lib64/ruby/gems/2.6.0/bin:$JAVA_HOME/bin

@@ -9,6 +9,7 @@ Plug 'ycm-core/YouCompleteMe'
 Plug 'sheerun/vim-polyglot'
 Plug 'preservim/nerdtree'
 Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-startify'
 call plug#end()
 
 set clipboard+=unnamedplus
@@ -23,6 +24,8 @@ set encoding=UTF-8
 syntax on
 set mouse=a
 set shell=/bin/bash
+filetype plugin on
+set ttyfast
 let g:UltiSnipsExpandTrigger="<c-a>"
 
 set runtimepath+=~/.config/nvim/syntax

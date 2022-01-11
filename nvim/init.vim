@@ -2,7 +2,7 @@ call plug#begin()
 Plug 'arzg/vim-colors-xcode'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'itchyny/lightline.vim'
+"Plug 'itchyny/lightline.vim'
 Plug 'rhysd/vim-clang-format'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ycm-core/YouCompleteMe'
@@ -35,12 +35,8 @@ if exists('+termguicolors')
     let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
     set termguicolors
 endif
-colorscheme xcodedarkhc
+colorscheme xcodedark
 set cursorline
-
-let g:lightline = {
-	\ 'colorscheme': 'material',
-	\ }
 
 nnoremap <silent> V :NERDTree<CR>
 

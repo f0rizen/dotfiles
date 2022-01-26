@@ -18,6 +18,7 @@ set shiftwidth=4
 set smarttab
 set expandtab
 set number
+set relativenumber
 set ruler
 set wrap
 set encoding=UTF-8

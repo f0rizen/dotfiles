@@ -1,5 +1,6 @@
 call plug#begin()
-Plug 'arzg/vim-colors-xcode'
+"Plug 'arzg/vim-colors-xcode'
+Plug 'Mofiqul/vscode.nvim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 "Plug 'itchyny/lightline.vim'
@@ -36,7 +37,9 @@ if exists('+termguicolors')
     let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
     set termguicolors
 endif
-colorscheme xcodedarkhc
+set background=dark
+let g:vscode_style = "dark"
+colorscheme vscode
 set cursorline
 
 nnoremap <silent> V :NERDTree<CR>

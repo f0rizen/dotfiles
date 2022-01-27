@@ -6,11 +6,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# Import aliases
 source ~/.aliases
-
-# Import functions
 source ~/.functions
+source ~/.cargo/env
 
 H=$HOME
 EDITOR=/usr/local/bin/nvim

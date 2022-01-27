@@ -7,6 +7,7 @@
 
 source ~/.functions
 source ~/.aliases
+source ~/.cargo/env
 
 H=$HOME
 EDITOR=/usr/local/bin/nvim
@@ -22,3 +23,4 @@ fi
 export JAVA_HOME=/opt/openjdk-bin-11
 export JAVA_CMD="/opt/openjdk-bin-11/bin/java"
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin:/usr/lib/llvm/12/bin:$HOME/.local/bin:/usr/local/lib64/ruby/gems/2.6.0/bin:$JAVA_HOME/bin
+. "$HOME/.cargo/env"

@@ -5,7 +5,7 @@
         "editor.defaultFormatter": "xaver.clang-format"
     },
     "workbench.startupEditor": "newUntitledFile",
-    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.defaultProfile.linux": "zsh",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,
@@ -45,7 +45,7 @@
         "applescript": "osascript",
         "clojure": "lein exec",
         "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
-        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "rust": "cd $dir && cargo run",
         "racket": "racket",
         "scheme": "csi -script",
         "ahk": "autohotkey",
@@ -82,7 +82,6 @@
     "editor.codeLensFontFamily": "'",
     "terminal.external.linuxExec": "gnome-terminal",
     "C_Cpp.intelliSenseEngine": "Disabled",
-    "editor.defaultFormatter": "xaver.clang-format",
     "editor.formatOnSave": true,
     "editor.fontLigatures": true
 }

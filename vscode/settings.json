@@ -83,5 +83,6 @@
     "terminal.external.linuxExec": "gnome-terminal",
     "C_Cpp.intelliSenseEngine": "Disabled",
     "editor.formatOnSave": true,
-    "editor.fontLigatures": true
+    "editor.fontLigatures": true,
+    "editor.minimap.renderCharacters": false
 }

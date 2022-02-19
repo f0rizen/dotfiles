@@ -17,8 +17,8 @@
     "code-runner.executorMap": {
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-        "c": "cd $dir && clang -DLOCAL $fileName -g -o /tmp/$fileNameWithoutExt && /tmp/$fileNameWithoutExt",
-        "cpp": "cd $dir && clang++ -DLOCAL -std=gnu++17 $fileName -g -o /tmp/$fileNameWithoutExt && /tmp/$fileNameWithoutExt",
+        "c": "cd $dir && gcc -DLOCAL $fileName -g -o /tmp/$fileNameWithoutExt && /tmp/$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ -DLOCAL -std=gnu++17 $fileName -g -o /tmp/$fileNameWithoutExt && /tmp/$fileNameWithoutExt",
         "objective-c": "cd $dir && gcc -DLOCAL -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "php": "php",
         "python": "python -u",
@@ -70,7 +70,7 @@
     "code-runner.runInTerminal": true,
     "terminal.integrated.fontFamily": "'Jetbrains Mono'",
     "workbench.editor.untitled.hint": "hidden",
-    "editor.fontFamily": "'Jetbrains Mono'",
+    "editor.fontFamily": "'JetBrains Mono'",
     "editor.fontSize": 16.75,
     "terminal.integrated.fontSize": 15.75,
     "notebook.cellToolbarLocation": {
@@ -84,5 +84,8 @@
     "C_Cpp.intelliSenseEngine": "Disabled",
     "editor.formatOnSave": true,
     "editor.fontLigatures": true,
-    "editor.minimap.renderCharacters": false
+    "editor.minimap.renderCharacters": false,
+    "clangd.arguments": [
+        "-header-insertion=never"
+    ]
 }

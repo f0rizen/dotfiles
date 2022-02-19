@@ -16,7 +16,7 @@
 		"prefix": "rnd",
 		"body": [
 			"std::mt19937",
-			"    generator(std::chrono::steady_clock::now().time_since_epoch().count());",
+			"    generator(std::chrono::high_resolution_clock::now().time_since_epoch().count());",
 			"",
 			"inline int getrand(int l, int r) {",
 			"    return std::uniform_int_distribution<int>(l, r)(generator);",

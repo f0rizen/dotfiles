@@ -1,16 +1,13 @@
 call plug#begin()
-"Plug 'arzg/vim-colors-xcode'
-Plug 'Mofiqul/vscode.nvim'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-"Plug 'itchyny/lightline.vim'
+Plug 'nvim-treesitter/nvim-treesitter'
+"Plug 'mhartington/oceanic-next'
+Plug 'sainnhe/edge'
 Plug 'rhysd/vim-clang-format'
 Plug 'ryanoasis/vim-devicons'
-Plug 'ycm-core/YouCompleteMe'
-Plug 'sheerun/vim-polyglot'
 Plug 'preservim/nerdtree'
 Plug 'airblade/vim-gitgutter'
-Plug 'mhinz/vim-startify'
+Plug 'jiangmiao/auto-pairs'
+Plug 'jdhao/better-escape.vim'
 call plug#end()
 
 set clipboard+=unnamedplus
@@ -19,30 +16,41 @@ set shiftwidth=4
 set smarttab
 set expandtab
 set number
-set relativenumber
 set ruler
 set wrap
 set encoding=UTF-8
 syntax on
 set mouse=a
 set shell=/bin/bash
-filetype plugin on
 set ttyfast
-let g:UltiSnipsExpandTrigger="<c-a>"
 
-set runtimepath+=~/.config/nvim/syntax
 set t_Co=256
-if exists('+termguicolors')
-    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-    set termguicolors
-endif
+"if exists('+termguicolors')
+"     let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+"     let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+"     set termguicolors
+"     let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+"endif
 set background=dark
-let g:vscode_style = "dark"
-colorscheme vscode
-set cursorline
+let g:edge_style = 'aura'
+let g:edge_better_performance = 1
+colorscheme edge
 
 nnoremap <silent> V :NERDTree<CR>
+
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  highlight = {
+    enable = true,
+    additional_vim_regex_highlighting = false,
+  },
+}
+require'nvim-treesitter.configs'.setup {
+  indent = {
+    enable = true
+  }
+}
+EOF
 
 function Compile()
     let res = '"/tmp/' . expand('%:t:r') . '.o"'

@@ -28,8 +28,8 @@
 		"prefix": "forceinline",
 		"body": [
 			"#define inline inline __attribute__((always_inline))"
-		],
-	},
+		]
+    },
 	"vectorcin": {
 		"prefix": "vectorcin",
 		"body": [

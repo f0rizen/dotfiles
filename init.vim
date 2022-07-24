@@ -1,13 +1,16 @@
 call plug#begin()
 Plug 'nvim-treesitter/nvim-treesitter'
-"Plug 'mhartington/oceanic-next'
-Plug 'sainnhe/edge'
+Plug 'rakr/vim-one'
 Plug 'rhysd/vim-clang-format'
 Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdtree'
 Plug 'airblade/vim-gitgutter'
-Plug 'jiangmiao/auto-pairs'
 Plug 'jdhao/better-escape.vim'
+
+Plug 'itchyny/lightline.vim'
+
+Plug 'mhinz/vim-startify'
+Plug 'junegunn/fzf'
 call plug#end()
 
 set clipboard+=unnamedplus
@@ -23,18 +26,18 @@ syntax on
 set mouse=a
 set shell=/bin/bash
 set ttyfast
+set cursorline
 
 set t_Co=256
-"if exists('+termguicolors')
-"     let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-"     let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-"     set termguicolors
-"     let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-"endif
+if exists('+termguicolors')
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    set termguicolors
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
 set background=dark
-let g:edge_style = 'aura'
-let g:edge_better_performance = 1
-colorscheme edge
+colorscheme one
+let g:lightline = { 'colorscheme': 'one' }
 
 nnoremap <silent> V :NERDTree<CR>
 

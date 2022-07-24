@@ -12,8 +12,6 @@
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
-    "python.insidersChannel": "weekly",
-    "workbench.editor.enablePreview": false,
     "code-runner.executorMap": {
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
@@ -68,17 +66,16 @@
     },
     "code-runner.saveFileBeforeRun": true,
     "code-runner.runInTerminal": true,
-    "terminal.integrated.fontFamily": "'Jetbrains Mono'",
+    "terminal.integrated.fontFamily": "'JetBrains Mono'",
     "workbench.editor.untitled.hint": "hidden",
     "editor.fontFamily": "'JetBrains Mono'",
-    "editor.fontSize": 16.75,
+    "editor.fontSize": 15.75,
     "terminal.integrated.fontSize": 15.75,
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
     },
     "security.workspace.trust.untrustedFiles": "open",
-    "C_Cpp.updateChannel": "Insiders",
     "editor.codeLensFontFamily": "'",
     "terminal.external.linuxExec": "gnome-terminal",
     "C_Cpp.intelliSenseEngine": "Disabled",
@@ -87,5 +84,13 @@
     "editor.minimap.renderCharacters": false,
     "clangd.arguments": [
         "-header-insertion=never"
-    ]
+    ],
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "extensions.ignoreRecommendations": true,
+    "window.menuBarVisibility": "toggle",
+    "oneDarkPro.bold": true,
+    "workbench.colorTheme": "One Dark Pro",
+    "oneDarkPro.editorTheme": "One Dark Pro Darker",
+    "editor.selectionHighlight": false,
+    "editor.occurrencesHighlight": false
 }

@@ -7,10 +7,9 @@
 
 source ~/.functions
 source ~/.aliases
-source ~/.cargo/env
 
 H=$HOME
-EDITOR=/usr/local/bin/nvim
+EDITOR=/usr/bin/nvim
 
 bind "\C-A":menu-complete
 

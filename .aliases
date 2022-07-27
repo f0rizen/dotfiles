@@ -15,5 +15,5 @@ alias pwndbg='pwndbg -ex init-pwndbg'
 alias gef='gdb-gef -ex init-gef'
 alias hashcat='hashcat --potfile-disable'
 
-alias qemu='qemu-system-x86_64'
+alias qemu='qemu-system-x86_64 -display sdl'
 alias kvm='qemu -enable-kvm'

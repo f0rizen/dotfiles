@@ -4,7 +4,6 @@
     "[cpp]": {
         "editor.defaultFormatter": "xaver.clang-format"
     },
-    "workbench.startupEditor": "newUntitledFile",
     "terminal.integrated.defaultProfile.linux": "zsh",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
@@ -76,7 +75,7 @@
         "jupyter-notebook": "left"
     },
     "security.workspace.trust.untrustedFiles": "open",
-    "editor.codeLensFontFamily": "'",
+    "editor.codeLensFontFamily": "'JetBrains Mono'",
     "terminal.external.linuxExec": "gnome-terminal",
     "C_Cpp.intelliSenseEngine": "Disabled",
     "editor.formatOnSave": true,
@@ -89,8 +88,10 @@
     "extensions.ignoreRecommendations": true,
     "window.menuBarVisibility": "toggle",
     "oneDarkPro.bold": true,
-    "workbench.colorTheme": "One Dark Pro",
     "oneDarkPro.editorTheme": "One Dark Pro Darker",
     "editor.selectionHighlight": false,
-    "editor.occurrencesHighlight": false
+    "editor.occurrencesHighlight": false,
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "One Dark Pro",
+    "window.zoomLevel": 1
 }

@@ -1,13 +1,11 @@
 call plug#begin()
 Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'rakr/vim-one'
+Plug 'Mofiqul/adwaita.nvim'
 Plug 'rhysd/vim-clang-format'
 Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdtree'
 Plug 'airblade/vim-gitgutter'
 Plug 'jdhao/better-escape.vim'
-
-Plug 'itchyny/lightline.vim'
 
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/fzf'
@@ -36,8 +34,7 @@ if exists('+termguicolors')
     let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 endif
 set background=dark
-colorscheme one
-let g:lightline = { 'colorscheme': 'one' }
+colorscheme adwaita
 
 nnoremap <silent> V :NERDTree<CR>
 

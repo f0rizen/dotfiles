@@ -1,7 +1,7 @@
 [user]
 	name = f0rizen
 	email = root@f0rizen.tk
-	signingkey = 4F509C200194063A
+	signingkey = 9F7BA85B30B99208
 [core]
 	editor = nvim
 [commit]

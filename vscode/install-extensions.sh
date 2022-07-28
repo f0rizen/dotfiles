@@ -9,7 +9,7 @@ else
     else [[ -v "$(command -v code-insiders)" ]]
         prog="code-insiders"
     fi
-    for i in ms-vscode.cpptools xaver.clang-format llvm-vs-code-extensions.vscode-clangd ms-azuretools.vscode-docker zhuangtongfa.material-theme platformio.platformio-ide rust-lang.rust-analyzer YishaiYosifov.templates; do
+    for i in ms-vscode.cpptools xaver.clang-format llvm-vs-code-extensions.vscode-clangd ms-azuretools.vscode-docker zhuangtongfa.material-theme platformio.platformio-ide rust-lang.rust-analyzer YishaiYosifov.templates formulahendry.code-runner; do
         $prog --install-extension $i &>/dev/null
     done
 fi

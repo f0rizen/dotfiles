@@ -68,7 +68,7 @@
     "terminal.integrated.fontFamily": "'JetBrains Mono'",
     "workbench.editor.untitled.hint": "hidden",
     "editor.fontFamily": "'JetBrains Mono'",
-    "editor.fontSize": 15.75,
+    "editor.fontSize": 14.75,
     "terminal.integrated.fontSize": 15.75,
     "notebook.cellToolbarLocation": {
         "default": "right",

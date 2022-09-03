@@ -1,6 +1,6 @@
 call plug#begin()
 Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'Mofiqul/adwaita.nvim'
+Plug 'drewtempelmeyer/palenight.vim'
 Plug 'rhysd/vim-clang-format'
 Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdtree'
@@ -27,14 +27,14 @@ set ttyfast
 set cursorline
 
 set t_Co=256
-if exists('+termguicolors')
-    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-    set termguicolors
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-endif
+"if exists('+termguicolors')
+"    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+"    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+"    set termguicolors
+"    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+"endif
 set background=dark
-colorscheme adwaita
+colorscheme palenight
 
 nnoremap <silent> V :NERDTree<CR>
 

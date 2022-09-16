@@ -15,7 +15,10 @@ if [[ $(whoami) == "root" ]]; then
     export PATH="$PATH:/usr/local/bin"
 fi
 export PATH="$PATH:/usr/local/lib64/ruby/gems/2.6.0/bin"
-if [[ $(whoami) != "root" ]]; then
-    export PATH="$HOME/.cargo/bin:$PATH"
-fi
 export PATH="$PATH:$HOME/.local/bin"
+
+DISABLE_AUTO_TITLE="true"
+case $TERM in xterm*)
+    precmd () {print -Pn "\e]0;%~\a"}
+    ;;
+esac

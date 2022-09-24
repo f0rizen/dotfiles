@@ -42,7 +42,7 @@
         "applescript": "osascript",
         "clojure": "lein exec",
         "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
-        "rust": "cd $dir && cargo run",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
         "racket": "racket",
         "scheme": "csi -script",
         "ahk": "autohotkey",
@@ -75,7 +75,6 @@
         "jupyter-notebook": "left"
     },
     "security.workspace.trust.untrustedFiles": "open",
-    "editor.codeLensFontFamily": "'JetBrains Mono'",
     "terminal.external.linuxExec": "gnome-terminal",
     "C_Cpp.intelliSenseEngine": "Disabled",
     "editor.formatOnSave": true,
@@ -92,6 +91,9 @@
     "editor.selectionHighlight": false,
     "editor.occurrencesHighlight": false,
     "workbench.startupEditor": "none",
-    "workbench.colorTheme": "One Dark Pro",
+    "editor.inlayHints.enabled": "off",
+    "editor.inlayHints.padding": true,
+    "editor.codeLensFontFamily": "'JetBrains Mono'",
+    "workbench.colorTheme": "GitHub Dark",
     "window.zoomLevel": 1
 }

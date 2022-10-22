@@ -14,7 +14,8 @@ bindkey '^A' expand-or-complete
 if [[ $(whoami) == "root" ]]; then
     export PATH="$PATH:/usr/local/bin"
 fi
-export PATH="$PATH:/usr/local/lib64/ruby/gems/2.6.0/bin"
+export PATH="$PATH:/usr/local/lib64/ruby/gems/3.0.0/bin"
+export PATH="$PATH:/home/f0rizen/.local/share/gem/ruby/3.0.0/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
 DISABLE_AUTO_TITLE="true"

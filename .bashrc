@@ -19,6 +19,4 @@ else
     PS1="\[\033]0;\u@\h:\w\007\]\[\033[01;31m\]\h\[\033[01;34m\] \w #\[\033[00m\] "
 fi
 
-export JAVA_HOME=/opt/openjdk-bin-11
-export JAVA_CMD="/opt/openjdk-bin-11/bin/java"
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin:/usr/lib/llvm/12/bin:$HOME/.local/bin:/usr/local/lib64/ruby/gems/2.6.0/bin:$JAVA_HOME/bin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$HOME/.local/bin:/usr/local/lib64/ruby/gems/3.0.0/bin:/usr/local/lib64/ruby/gems/3.0.0/bin

@@ -1,11 +1,10 @@
 call plug#begin()
 Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'drewtempelmeyer/palenight.vim'
+Plug 'shaunsingh/oxocarbon.nvim', { 'do': './install.sh' }
 Plug 'rhysd/vim-clang-format'
 Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdtree'
 Plug 'airblade/vim-gitgutter'
-Plug 'jdhao/better-escape.vim'
 
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/fzf'
@@ -22,19 +21,19 @@ set wrap
 set encoding=UTF-8
 syntax on
 set mouse=a
-set shell=/bin/bash
+set shell=/bin/zsh
 set ttyfast
 set cursorline
 
 set t_Co=256
-"if exists('+termguicolors')
-"    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-"    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-"    set termguicolors
-"    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-"endif
+if exists('+termguicolors')
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    set termguicolors
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
 set background=dark
-colorscheme palenight
+colorscheme oxocarbon
 
 nnoremap <silent> V :NERDTree<CR>
 

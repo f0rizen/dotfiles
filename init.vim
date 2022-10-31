@@ -8,6 +8,9 @@ Plug 'airblade/vim-gitgutter'
 
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/fzf'
+
+Plug 'neovim/nvim-lspconfig'
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 call plug#end()
 
 set clipboard+=unnamedplus
@@ -23,7 +26,7 @@ syntax on
 set mouse=a
 set shell=/bin/zsh
 set ttyfast
-set cursorline
+"set cursorline
 
 set t_Co=256
 if exists('+termguicolors')

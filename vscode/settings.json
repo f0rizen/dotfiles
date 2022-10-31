@@ -68,7 +68,6 @@
     "terminal.integrated.fontFamily": "'JetBrains Mono'",
     "workbench.editor.untitled.hint": "hidden",
     "editor.fontFamily": "'JetBrains Mono'",
-    "editor.fontSize": 14.75,
     "terminal.integrated.fontSize": 15.75,
     "notebook.cellToolbarLocation": {
         "default": "right",
@@ -86,14 +85,18 @@
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "extensions.ignoreRecommendations": true,
     "window.menuBarVisibility": "toggle",
-    "oneDarkPro.bold": true,
-    "oneDarkPro.editorTheme": "One Dark Pro Darker",
     "editor.selectionHighlight": false,
     "editor.occurrencesHighlight": false,
     "workbench.startupEditor": "none",
     "editor.inlayHints.enabled": "off",
     "editor.inlayHints.padding": true,
     "editor.codeLensFontFamily": "'JetBrains Mono'",
-    "workbench.colorTheme": "GitHub Dark",
-    "window.zoomLevel": 1
+    "editor.fontSize": 15,
+    "editor.bracketPairColorization.enabled": false,
+    "window.zoomLevel": 1,
+    "editor.guides.indentation": false,
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "editor.renderLineHighlight": "none",
+    "editor.cursorBlinking": "solid",
+    "workbench.colorTheme": "One Dark Darker"
 }
